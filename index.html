@@ -1,206 +1,270 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lalit Arora | UC & CCaaS Specialist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Lalit Arora | UC & CCaaS Specialist</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    body {
-      line-height: 1.7;
-      background: #f6f8fa;
-      color: #1a1a1a;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-    header {
-      background: linear-gradient(135deg,#0f172a,#1e293b);
-      color: #fff;
-      padding: 60px 20px;
-      text-align: center;
-    }
+body {
+  background: #020617;
+  color: #e2e8f0;
+}
 
-    /* Personal Logo Text */
-    .logo {
-      font-size: 40px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      background: linear-gradient(to right,#38bdf8,#22c55e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
-      margin-bottom: 10px;
-    }
+/* ==================== HEADER ==================== */
+header {
+  min-height: 100vh;
+  background: radial-gradient(circle at top right, #1e3a8a, #020617);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
 
-    header p {
-      max-width: 800px;
-      margin: auto;
-      font-size: 17px;
-      opacity: 0.9;
-    }
+.hero-box {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  padding: 60px;
+  border-radius: 24px;
+  max-width: 900px;
+  box-shadow: 0 25px 60px rgba(0,0,0,.6);
+  border: 1px solid rgba(255,255,255,0.08);
+}
 
-    nav {
-      margin-top: 20px;
-    }
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg,#38bdf8,#4ade80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-    nav a {
-      color: #e2e8f0;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: 500;
-    }
+.role {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #94a3b8;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+.hero-text {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #cbd5e1;
+}
 
-    section {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 20px;
-    }
+nav {
+  margin-top: 30px;
+}
 
-    .section-title {
-      font-size: 28px;
-      margin-bottom: 15px;
-      color: #0f172a;
-    }
+nav a {
+  display: inline-block;
+  margin: 10px 14px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  border: 1px solid #1e40af;
+  color: #e0f2fe;
+  text-decoration: none;
+  transition: all .3s ease;
+}
 
-    .about, .expertise, .journey, .connect {
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    }
+nav a:hover {
+  background: #1e40af;
+  box-shadow: 0 0 20px #1e40af;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+/* ==================== SECTIONS ==================== */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
 
-    li {
-      margin-bottom: 10px;
-    }
+.section-title {
+  font-size: 32px;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg,#38bdf8,#4ade80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-    footer {
-      background: #0f172a;
-      color: #cbd5e1;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      font-size: 14px;
-    }
+/* ==================== CARDS ==================== */
+.card {
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,.08);
+  margin-top: 20px;
+}
 
-    footer span {
-      color: #38bdf8;
-    }
+/* ==================== EXPERTISE GRID ==================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
 
-    .highlight {
-      color: #0ea5e9;
-      font-weight: 600;
-    }
+.skill {
+  background: #020617;
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid #1e293b;
+  transition: .3s;
+}
 
-    @media (max-width: 768px) {
-      .logo {
-        font-size: 30px;
-      }
+.skill:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
 
-      header p {
-        font-size: 15px;
-        padding: 0 10px;
-      }
-    }
-  </style>
+.skill h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* ==================== JOURNEY ==================== */
+.timeline li {
+  margin: 12px 0;
+  list-style: none;
+  padding-left: 20px;
+  border-left: 2px solid #38bdf8;
+}
+
+/* ==================== CONTACT ==================== */
+.contact-list li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #020617;
+  border-top: 1px solid #1e293b;
+  color: #64748b;
+}
+
+footer span {
+  color: #38bdf8;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media(max-width:768px){
+  .hero-box { padding: 40px 20px; }
+  .logo { font-size: 2rem; }
+}
+</style>
 </head>
 
 <body>
 
 <header>
+  <div class="hero-box">
+    <div class="logo">LALIT ARORA</div>
+    <div class="role">
+      Unified Communications & Contact Center Specialist
+    </div>
 
-  <!-- Personal Logo -->
-  <div class="logo">LALIT ARORA</div>
+    <p class="hero-text">
+      Senior Manager | Pre-Sales Solution Architect | UC / CCaaS / Cloud Collaboration Consultant
+      <br><br>
+      15+ years of global experience helping enterprises modernize communication, contact center
+      and digital experience ecosystems across APAC, EMEA & Americas.
+    </p>
 
-  <h2>Unified Communications & Contact Center Specialist</h2>
-  <p>
-    Senior Manager | Pre-Sales Solution Architect | UC / CCaaS / Cloud Collaboration Consultant
-  </p>
-
-<nav>
-  <a href="#about">About</a>
-  <a href="#expertise">Expertise</a>
-  <a href="#journey">Journey</a>
-  <a href="articles.html">Articles</a>
-  <a href="#connect">Connect</a>
-</nav>
-
+    <nav>
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#journey">Journey</a>
+      <a href="articles.html">Articles</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </div>
 </header>
 
 <section id="about">
-  <div class="about">
-    <h2 class="section-title">About Me</h2>
+  <h2 class="section-title">About Me</h2>
+  <div class="card">
     <p>
-      Welcome to my professional space where I share my experience and knowledge 
-      across <span class="highlight">Unified Communications, Contact Center, Cloud Collaboration, and Enterprise Telephony</span>.
-    </p>
-
-    <p>
-      With over <strong>15 years of hands-on global experience</strong>, I have helped enterprises
-      modernize their communication ecosystems and transform customer engagement strategies.
-      Currently, I lead <strong>Unified Communications & Contact Center Solutioning for APAC at Tata Communications</strong>,
-      supporting large and complex enterprise transformation initiatives.
+      I help organizations transition from legacy communication systems to
+      modern <b>cloud-first, AI-ready UC & CCaaS platforms</b>.
+      <br><br>
+      Currently leading Unified Communications & Contact Center solutioning
+      for APAC at Tata Communications, working with Fortune clients,
+      multinationals and fast-growing tech organizations.
     </p>
   </div>
 </section>
 
 <section id="expertise">
-  <div class="expertise">
-    <h2 class="section-title">Areas of Expertise</h2>
-    <ul>
-      <li><b>Unified Communications:</b> Microsoft Teams (Direct Routing, Operator Connect, Teams Phone), Cisco CUCM, Webex Calling, Hybrid UC.</li>
-      <li><b>Contact Center (CCaaS):</b> Genesys Cloud, NICE CXone, Cisco UCCE/UCCX, Webex Contact Center, Amazon Connect, Anywhere365.</li>
-      <li><b>Telephony & Voice:</b> Global SIP, SBC (Ribbon, AudioCodes, Cisco), PSTN strategy, telephony migration.</li>
-      <li><b>Architecture:</b> Multi-cloud, hybrid deployments, secure and scalable communication environments.</li>
-      <li><b>Compliance:</b> India DOT & global telecom regulation consulting.</li>
-    </ul>
+  <h2 class="section-title">Core Expertise</h2>
+
+  <div class="grid">
+    <div class="skill">
+      <h3>Unified Communications</h3>
+      <p>Microsoft Teams, Webex, CUCM, Hybrid UC, Operator Connect</p>
+    </div>
+
+    <div class="skill">
+      <h3>Contact Center (CCaaS)</h3>
+      <p>Genesys Cloud, NICE CXone, Webex CC, Amazon Connect</p>
+    </div>
+
+    <div class="skill">
+      <h3>Telephony & SIP</h3>
+      <p>Global SIP, SBC, PSTN, Direct Routing</p>
+    </div>
+
+    <div class="skill">
+      <h3>Architecture & Strategy</h3>
+      <p>Cloud migration, hybrid design, CX modernization</p>
+    </div>
   </div>
+
 </section>
 
 <section id="journey">
-  <div class="journey">
-    <h2 class="section-title">Professional Journey</h2>
-    <ul>
-      <li><strong>Tata Communications</strong> – Sr. Manager, Pre-Sales Solution Engineering (Present)</li>
-      <li><strong>Orange Business Services</strong> – Senior Solution Consultant & SME</li>
-      <li><strong>AT&T Global Services</strong> – UCCX Engineer</li>
-      <li><strong>Wipro Infotech</strong> – Desktop & Network Support</li>
-    </ul>
+  <h2 class="section-title">Career Journey</h2>
 
-    <p>
-      My journey has always focused on one mission:
-      <strong>"Empowering businesses with intelligent, secure, and frictionless communication."</strong>
-    </p>
+  <div class="card">
+    <ul class="timeline">
+      <li><strong>Tata Communications</strong> – Sr. Manager, Pre-Sales (Present)</li>
+      <li><strong>Orange Business Services</strong> – Sr. Solution Consultant</li>
+      <li><strong>AT&T</strong> – UCCX Engineer</li>
+      <li><strong>Wipro</strong> – L1 Support Engineer</li>
+    </ul>
   </div>
 </section>
 
 <section id="connect">
-  <div class="connect">
-    <h2 class="section-title">Let’s Connect</h2>
-    <p>If you’d like to collaborate or discuss opportunities:</p>
-    <ul>
-      <li><b>Email:</b> arora_la@yahoo.co.in</li>
-      <li><b>LinkedIn:</b> linkedin.com/in/lalitarora-89</li>
-      <li><b>Location:</b> Mumbai, India</li>
+  <h2 class="section-title">Let’s Connect</h2>
+
+  <div class="card">
+    <ul class="contact-list">
+      <li>📧 arora_la@yahoo.co.in</li>
+      <li>🔗 linkedin.com/in/lalitarora-89</li>
+      <li>📍 Mumbai, India</li>
     </ul>
   </div>
 </section>
 
 <footer>
-  © 2025 <span>Lalit Arora</span> | Unified Communications & CX Transformation
+  © 2025 <span>Lalit Arora</span> | UC & CCaaS Transformation
 </footer>
 
 </body>

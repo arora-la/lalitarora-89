@@ -1,55 +1,116 @@
-<!-- Updated WFO HTML with header -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Reimagining Workforce Excellence — Cisco Webex CC WFO Suite</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cisco Webex CC – Workforce Optimization Suite</title>
 
-  <style>
-    * { box-sizing: border-box; }
-    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;background:linear-gradient(180deg,#062f53,#06345a);color:#ffffff;line-height:1.6}
+<!-- Inter Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    header {
-      background: linear-gradient(135deg,#0f172a,#1e293b);
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
+<style>
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0a1f44, #0e4a7b);
+    color: #1a1a1a;
+  }
 
-    .logo {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      background: linear-gradient(to right,#38bdf8,#22c55e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+  header {
+    background: #003b70;
+    color: #fff;
+    padding: 22px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  }
 
-    nav { margin-top: 15px; }
-    nav a {
-      color: #e2e8f0;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover { text-decoration: underline; }
+  header .logo {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
 
-    .container{max-width:1000px;margin:40px auto;padding:32px}
-    .hero{display:flex;gap:32px;align-items:center}
-    .hero .copy{flex:1}
-    h1{font-size:1.9rem;margin:0 0 12px;letter-spacing:-0.5px}
-    p.lead{font-size:1.05rem;color:#cfe6ff;margin:0 0 20px}
-    .banner{flex:0 0 420px;max-width:420px;border-radius:6px;overflow:hidden;background:#083b66;padding:18px}
-    .banner img{display:block;width:100%;height:auto}
-    .card{background:rgba(255,255,255,0.03);padding:22px;border-radius:8px;margin-top:20px}
-    h2{color:#dff1ff;margin-top:12px}
-    ul{margin:8px 0 16px 20px}
-    pre.diagram{background:rgba(0,0,0,0.18);padding:12px;border-radius:6px;overflow:auto;color:#ffffff}
-    .footer{margin-top:32px;color:#98c5df;font-size:0.95rem}
+  header p {
+    font-size: 14px;
+    margin-top: 6px;
+    opacity: 0.9;
+  }
 
-    @media (max-width:880px){.hero{flex-direction:column}.banner{max-width:100%;width:100%}}
-  </style>
+  nav {
+    margin-top: 12px;
+  }
+
+  nav a {
+    margin: 0 15px;
+    color: #cfe9ff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  nav a:hover {
+    color: #ffffff;
+  }
+
+  .banner {
+    width: 100%;
+    max-height: 260px;
+    overflow: hidden;
+    border-bottom: 4px solid #005a9c;
+  }
+
+  .banner img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #003b70;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+    color: #005a9c;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-top: 25px;
+    color: #005a9c;
+  }
+
+  p, li {
+    line-height: 1.7;
+    color: #333;
+    font-size: 16px;
+  }
+
+  .diagram {
+    background: #f0f6ff;
+    padding: 20px;
+    border-left: 4px solid #005a9c;
+    border-radius: 6px;
+    font-family: monospace;
+    margin-top: 22px;
+    white-space: pre-wrap;
+  }
+
+</style>
 </head>
 
 <body>
@@ -57,7 +118,6 @@
 <header>
   <div class="logo">LALIT ARORA</div>
   <p>Thoughts, Insights & Knowledge Sharing</p>
-
   <nav>
     <a href="../index.html">Home</a>
     <a href="../index.html">Articles</a>
@@ -66,25 +126,130 @@
   </nav>
 </header>
 
-<main class="container">
-    <section class="hero">
-      <div class="copy">
-        <h1>Reimagining Workforce Excellence: <br>How Cisco Webex Contact Center’s Workforce Optimization Suite Elevates People, Performance, and Customer Experience</h1>
-        <p class="lead">In the modern customer era, contact centers are no longer support engines—they are brand experiences. Every call, every chat, every interaction shapes how customers perceive an organization. Behind every interaction stands the most important pillar of any contact center: its people.</p>
-      </div>
+<div class="banner">
+  <img src="image/wfobanner.png" alt="WFO Banner">
+</div>
 
-      <div class="banner" aria-hidden="true">
-        <img src="image/wfobanner.png" alt="Reimagining Workforce Excellence — Cisco Webex CC WFO Suite">
-      </div>
-    </section>
+<div class="container">
 
-    <article class="card" role="article">
-      <!-- Original article content continues unchanged -->
-      <p>But managing people at scale has never been simple. Forecasting is unpredictable, staffing is a constant battle, agent burnout is real, and consistency in customer experience is increasingly difficult...</p>
+<h1>Reimagining Workforce Excellence: How Cisco Webex Contact Center’s Workforce Optimization Suite Elevates People, Performance, and Customer Experience</h1>
 
-      <!-- The rest of the article remains identical to your original WFO.html -->
-    </article>
-</main>
+<p>In the modern customer era, contact centers are no longer support engines—they are brand experiences.
+Every call, every chat, every moment of interaction shapes how customers perceive an organization. And behind every interaction stands the most important pillar of any contact center: its people.</p>
 
+<p>But managing people at scale has never been simple. Forecasting is unpredictable, staffing is a constant battle, agent burnout is real, and consistency in customer experience is increasingly difficult.</p>
+
+<p>This is where Cisco Webex Contact Center’s Workforce Optimization (WFO) Suite brings a meaningful transformation—not just through technology, but through a people-centric approach to workforce intelligence.</p>
+
+<p>Cisco’s WFO suite doesn’t just optimize schedules or record interactions. It helps leaders build smarter, more engaged, more empowered teams. This is not automation replacing human value—it is automation elevating human value.</p>
+
+<h2>1. A Human-Centric Suite Designed for Modern Contact Centers</h2>
+
+<ul>
+  <li><strong>✔ Workforce Management (WFM)</strong> — Predicts workloads, builds optimal schedules, balances skills, and adapts to real-time changes.</li>
+  <li><strong>✔ Quality Management (QM)</strong> — Ensures every interaction is meaningful through coaching, evaluations, and actionable insights.</li>
+  <li><strong>✔ Workforce Analytics (Analyzer)</strong> — Offers a 360° real-time operational view.</li>
+  <li><strong>✔ Surveys & Customer Feedback</strong> — Brings customer voice directly into coaching cycles.</li>
+  <li><strong>✔ Interaction Recording & Compliance</strong> — Safeguards customer trust with secure recording.</li>
+</ul>
+
+<h2>2. Turning Forecasting Into a Strategic Advantage</h2>
+<p>Most contact centers ask, “How many people do we need today?”  
+With WFM, leaders can now ask: “How do we ensure the right people are in the right place at the right moment?”</p>
+
+<ul>
+  <li>Anticipate upcoming demand</li>
+  <li>Build flexible schedules</li>
+  <li>Prevent customer frustration</li>
+  <li>Reduce burnout</li>
+</ul>
+
+<h2>3. Empowering Agents Through Clarity and Choice</h2>
+
+<ul>
+  <li>View schedules</li>
+  <li>Swap shifts</li>
+  <li>Request time off</li>
+  <li>See performance dashboards</li>
+  <li>Understand improvements clearly</li>
+</ul>
+
+<h2>4. Leadership Visibility Without Micromanagement</h2>
+
+<ul>
+  <li>Real-time visibility into queues, SLA, AHT, occupancy</li>
+  <li>Trend monitoring</li>
+  <li>Alerts for staffing misalignment</li>
+  <li>Skill-level coaching insights</li>
+</ul>
+
+<h2>5. Quality Management That Drives Growth, Not Fear</h2>
+
+<ul>
+  <li>Recording for improvement—not punishment</li>
+  <li>Empathy-driven coaching</li>
+  <li>Speech & text analytics</li>
+  <li>Consistent evaluations</li>
+  <li>Proactive coaching</li>
+</ul>
+
+<h2>6. Customer Feedback That Actually Drives Action</h2>
+
+<ul>
+  <li>Integrated surveys</li>
+  <li>Feedback in scorecards</li>
+  <li>Coaching alignment</li>
+  <li>Performance dashboards</li>
+</ul>
+
+<h2>7. Workforce Optimization as a Leadership Strategy</h2>
+
+<ul>
+  <li>Plan with precision</li>
+  <li>Operate with clarity</li>
+  <li>Coach with empathy</li>
+  <li>Refine with data</li>
+  <li>Scale with consistency</li>
+</ul>
+
+<h2>Diagram Representation: Cisco Webex CC WFO Ecosystem</h2>
+
+<div class="diagram">
+┌──────────────────────────────────┐
+│ Cisco Webex Contact Center (CC)  │
+└──────────────────────────────────┘
+              │
+              ▼
+┌───────────────────────────────────────────────┐
+│   Workforce Optimization (WFO) Suite Ecosystem│
+└───────────────────────────────────────────────┘
+   │             │             │            │
+   ▼             ▼             ▼            ▼
+┌──────────┐ ┌───────────┐ ┌────────────┐ ┌─────────────┐
+│ WFM      │ │ QM        │ │ Analytics  │ │ Surveys     │
+└──────────┘ └───────────┘ └────────────┘ └─────────────┘
+   │             │             │            │
+   └──── Human + AI Driven Operational Excellence ────┘
+
+              ▼
+┌───────────────────────────────┐
+│ Better CX, Happier Agents     │
+│ Lower Cost, Stronger SLA      │
+└───────────────────────────────┘
+</div>
+
+<h2>Transformational Insight</h2>
+<p><i>Technology alone doesn’t transform a contact center. People do.</i><br>
+Cisco Webex Contact Center’s WFO Suite amplifies the potential of those people—
+not by replacing them, but by empowering them with intelligence, clarity, and balance.</p>
+
+<p>In a world where customer expectations are rising and operational complexity is growing,
+WFO becomes more than a tool—it becomes a leadership advantage.</p>
+
+</div>
+
+<footer>
+  © 2025 <span>writen by Lalit Arora</span> | Articles & Knowledge Sharing
+</footer>
 </body>
 </html>

@@ -1,188 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webex Customer Assist — Modern Customer Engagement Architecture</title>
+
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-        }
-        header {
-            background: #004f9e;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        article {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px 30px;
-            background: #ffffff;
-            border-radius: 8px;
-        }
-        h1, h2, h3 {
-            color: #003366;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #ddd;
-            margin: 25px 0;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        .section-title {
-            font-weight: bold;
-            margin-top: 40px;
-        }
+    /* Global Theme */
+    :root {
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #0b63d1;
+      --accent-dark: #0a4ba0;
+      --header-bg: #003b70;
+      --article-title: #003366;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: #0f172a;
+      line-height: 1.65;
+    }
+
+    /* MAIN HEADER */
+    header.main-header {
+      background: var(--header-bg);
+      color: #fff;
+      padding: 22px 0;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    header .logo {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 5px 0;
+      opacity: 0.9;
+      font-size: 15px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #cfe9ff;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* Banner */
+    .banner {
+      width: 100%;
+      height: 380px;
+      overflow: hidden;
+      background-color: #003d73;
+      border-bottom: 4px solid #005a9c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    /* Article Wrapper */
+    article {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px 40px;
+      background: var(--card);
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+
+    article h1, article h2, article h3 {
+      color: var(--article-title);
+    }
+
+    article h1 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    article h2 {
+      font-size: 24px;
+      margin-top: 28px;
+    }
+
+    article h3 {
+      font-size: 19px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 28px 0;
+    }
+
+    .diagram img {
+      margin: 18px auto;
+      max-width: 100%;
+      border-radius: 6px;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      text-align: center;
+      margin: 28px 0 20px;
+      font-size: 14px;
+      color: var(--muted);
+    }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>Webex Customer Assist — Modern Customer Engagement Architecture for the Enterprise</h1>
-        <p>A Leadership & Technical Perspective</p>
-    </header>
 
-    <article>
-        <p>Enterprises today are under immense pressure to deliver responsive, consistent, and measurable customer service—yet many do not have the budget, operational readiness, or workload scale to justify a full Contact Center as a Service (CCaaS) deployment. Webex Calling Customer Assist directly responds to this gap by extending Webex Calling with structured customer engagement workflows—queueing, routing, monitoring, recording, analytics, and AI—without the cost or complexity of a traditional contact center.</p>
+<!-- PERSONAL HEADER -->
+<header class="main-header">
+  <div class="logo">LALIT ARORA</div>
+  <p>Thoughts, Insights & Knowledge Sharing</p>
 
-        <p>This document provides a leadership-aligned point of view and a technical architecture deep dive to guide enterprise decision makers, architects, and operations teams evaluating Customer Assist as a strategic CX enabler.</p>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="article.html">Articles</a>
+    <a href="../index.html">Knowledge Hub</a>
+    <a href="https://www.linkedin.com/in/lalitarora-89">Contact</a>
+  </nav>
+</header>
 
-        <hr>
+<!-- FEATURE BANNER (optional) -->
+<div class="banner">
+   <img src="image/webexCustomerAsist.png" alt="Customer Assist Banner">
+</div>
 
-        <h2>1. Strategic Leadership Overview</h2>
+<!-- ARTICLE CONTENT -->
+<article>
+    <h1>Webex Customer Assist — Modern Customer Engagement Architecture for the Enterprise</h1>
+    <p><em>A Leadership & Technical Perspective</em></p>
 
-        <p>Webex Customer Assist offers a modern, cloud-native, scalable approach for organizations that need to professionalize customer interactions while maximizing existing Webex Calling investments. It is built for enterprises that require structured workflows—front-office desks, service teams, operations desks, regional support pods, and field coordination lines—without deploying a full CCaaS technology stack.</p>
+    <p>Enterprises today are under immense pressure to deliver responsive, consistent, and measurable customer service—yet many do not have the budget, operational readiness, or workload scale to justify a full Contact Center as a Service (CCaaS) deployment. Webex Calling Customer Assist directly responds to this gap ...</p>
 
-        <h3>Key Strategic Advantages</h3>
-        <ul>
-            <li><strong>Modern CX maturity, without CCaaS overhead</strong> — Queueing, routing, monitoring, recording, and analytics delivered natively through Webex Calling.</li>
-            <li><strong>Frictionless operational adoption</strong> — Agents and supervisors use the Webex App—no new tools or licenses required.</li>
-            <li><strong>Unified platform vision</strong> — Calling, collaboration, service workflows, and AI in a single ecosystem.</li>
-            <li><strong>Scalable for distributed workforce models</strong> — Ideal for hybrid, branch-heavy, or geographically diverse enterprises.</li>
-            <li><strong>Future-ready foundation</strong> — Webex AI adds summaries, sentiment tagging, keyword detection, and insights.</li>
-        </ul>
+    <hr>
 
-        <p>Customer Assist represents the “middle layer” between PBX call queues and enterprise-grade CCaaS—an intelligent, scalable stepping stone for CX transformation.</p>
+    <h2>1. Strategic Leadership Overview</h2>
+    <p>Webex Customer Assist offers a modern, cloud-native, scalable approach ...</p>
 
-        <hr>
+    <h3>Key Strategic Advantages</h3>
+    <ul>
+        <li><strong>Modern CX maturity</strong> — Queueing, routing, monitoring...</li>
+        <li><strong>Frictionless adoption</strong> — Agents use Webex App...</li>
+        <li><strong>Unified platform</strong> — Calling + collaboration + AI...</li>
+        <li><strong>Scalable & distributed</strong>...</li>
+        <li><strong>Future-ready AI foundation</strong>...</li>
+    </ul>
 
-        <h2>2. High-Level Architecture Overview</h2>
-        <p>Customer Assist operates as a cloud-native service layer on top of Webex Calling, enriching call queues with routing, monitoring, and analytics.</p>
-        <h2>Diagram Representation: Routing Architecture</h2>
+    <hr>
 
-            <div class="diagram">
-            <img src="image/webexRA.png" >
+    <h2>2. High-Level Architecture Overview</h2>
+    <p>Customer Assist operates as a cloud-native service layer...</p>
 
-            </div>
+    <div class="diagram">
+        <img src="image/webexRA.png" alt="Webex Routing Architecture Diagram">
+    </div>
 
-        <h3>Core Architecture Components</h3>
+    <h3>Core Components</h3>
+    <ul>
+        <li>Webex Calling Cloud</li>
+        <li>Customer Assist Layer</li>
+        <li>Control Hub</li>
+        <li>Webex AI</li>
+    </ul>
 
-        <h4>1. Webex Calling Cloud (Telephony Core)</h4>
-        <ul>
-            <li>SIP signaling and cloud PBX</li>
-            <li>PSTN & Calling connectivity</li>
-            <li>Endpoint provisioning</li>
-            <li>DID / IVR routing</li>
-        </ul>
+    <hr>
 
-        <h4>2. Customer Assist Service Layer</h4>
-        <ul>
-            <li>Queue creation & management</li>
-            <li>Business hours & schedules</li>
-            <li>Announcements & wait-time messaging</li>
-            <li>Skill groups & routing strategies</li>
-            <li>Overflow & failover</li>
-            <li>Recording & monitoring</li>
-        </ul>
+    <h2>3. Queue Architecture & Routing Logic</h2>
+    ...
+    <hr>
 
-        <h4>3. Webex Control Hub (Admin Workspace)</h4>
-        <ul>
-            <li>Queue policies & configuration</li>
-            <li>Agent assignment</li>
-            <li>Supervisor dashboards</li>
-            <li>Recordings & analytics</li>
-        </ul>
+    <h2>4. Recording, Storage & Compliance</h2>
+    ...
+    <hr>
 
-        <h4>4. Webex AI Assistant Layer</h4>
-        <ul>
-            <li>Call summaries</li>
-            <li>Sentiment detection</li>
-            <li>Keyword spotting</li>
-            <li>Trend insights</li>
-        </ul>
+    <h2>5. Supervisor Workflows</h2>
+    ...
+    <hr>
 
-        <hr>
+    <h2>6. Analytics & AI Capabilities</h2>
+    ...
+    <hr>
 
-        <h2>3. Queue Architecture & Routing Logic</h2>
-        <p>Customer Assist provides structured queue workflows for professional service handling.</p>
+    <h2>7. Deployment Architecture</h2>
+    ...
+    <hr>
 
-        <h3>Routing Strategies</h3>
-        <ul>
-            <li>Longest Idle</li>
-            <li>Round Robin</li>
-            <li>Top-down</li>
-            <li>Overflow: backup queue / voicemail / announcement</li>
-        </ul>
+    <h2>8. Enterprise Fit & Use Cases</h2>
+    ...
+    <hr>
 
-        <p><strong>End-to-End Flow:</strong> Caller → Business hours check → Queue → Routing → Agent → Recording</p>
+    <h2>9. Leadership Summary</h2>
+    <p>Webex Customer Assist ...</p>
 
-        <hr>
+</article>
 
-        <h2>4. Recording, Storage & Compliance</h2>
-        <ul>
-            <li>Automatic or supervisor-enabled recording</li>
-            <li>Metadata tagging</li>
-            <li>Encrypted storage</li>
-            <li>Access controls & retention policies</li>
-        </ul>
+<footer>
+  © 2025 — Leadership Briefing | Webex Customer Assist
+</footer>
 
-        <hr>
-
-        <h2>5. Supervisor Workflows in Control Hub</h2>
-        <ul>
-            <li>Real-time call & queue monitoring</li>
-            <li>Agent state visibility</li>
-            <li>Silent monitoring</li>
-            <li>Performance dashboards</li>
-        </ul>
-
-        <hr>
-
-        <h2>6. Analytics & AI Capabilities</h2>
-        <ul>
-            <li>Queue KPIs</li>
-            <li>Agent performance</li>
-            <li>Volume trends</li>
-            <li>AI summaries & sentiment</li>
-        </ul>
-
-        <hr>
-
-        <h2>7. Deployment Architecture</h2>
-        <p>No SBCs, IVR servers, or on-prem middleware required. Cloud-first approach ensures scale and availability.</p>
-
-        <hr>
-
-        <h2>8. Enterprise Fit & Use Cases</h2>
-        <ul>
-            <li>Customer service pods</li>
-            <li>Branch reception desks</li>
-            <li>IT / HR helpdesks</li>
-            <li>Field operations</li>
-            <li>Logistics & order desks</li>
-        </ul>
-
-        <hr>
-
-        <h2>9. Leadership Summary</h2>
-        <p>Webex Customer Assist delivers a strategic middle ground—professional, scalable customer engagement without CCaaS complexity. It elevates CX maturity, enhances supervisor control, prepares for AI-driven workflows, and maximizes Webex investments.</p>
-
-    </article>
 </body>
 </html>
